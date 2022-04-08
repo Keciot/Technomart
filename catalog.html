@@ -41,9 +41,11 @@
                 <a href="tel: +781255505055">+7 (812) 555-05-55</a>
                 <a href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
             </div>
-            <div class="header-content-links">
-                <a href="#">Войти</a>
-                <a href="#">Регистрация</a>
+            <div class="header-user">
+                <a class="userlink" href="#">Иванов Иван</a>
+                <a href="#">Мои заказы</a>
+                <p>&bull;</p>
+                <a href="#">Личный кабинет</a>
             </div>
         </div>
         <nav class="header-bottom-nav">
@@ -60,7 +62,52 @@
     </header>
 
     <main>
-        
+        <nav class="main-catalog">
+            <a href="catalog.html">каталог</a>
+            <a href="#">инструмент</a>
+            <a href="#">перфораторы</a>
+        </nav>
+        <section class="perf">
+            <h1>перфораторы</h1>
+            <div class="perf-wrap">
+                <aside class="perf-filters">
+                    <h3>фильтр:</h3>
+                    <form action="#">
+                        <fieldset class="filter-price">
+                            <legend>цена:</legend>
+                            <input type="range" min="0" max="30000" value="50" class="slider" id="filters-price">
+                            <input type="text" value="0">
+                            <p>&mdash;</p>
+                            <input type="text" value="30000">
+                        </fieldset>
+                        <fieldset class="filter-brand">
+                            <legend>производители:</legend>
+                            <label><input type="checkbox" checked>bosh</label>
+                            <label><input type="checkbox" >интерскол</label>
+                            <label><input type="checkbox" checked>makita</label>
+                            <label><input type="checkbox" >dewalt</label>
+                            <label><input type="checkbox" >hitachi</label>
+                        </fieldset>
+                        <fieldset class="filter-power">
+                            <legend>питание:</legend>
+                            <label for="battery"><input type="radio" name="powerselect" id="battery" checked>аккумуляторые</label>
+                            <label for="cord"><input type="radio" name="powerselect" id="cord">сетевые</label>
+
+                        </fieldset>
+                    </form>
+
+
+
+
+                </aside>
+                <div class="perf-cards">
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
